@@ -6,18 +6,17 @@
 body {
     background-color: rgb(177, 184, 147);
     margin: 40px;
-    width: 100vw;
     display: grid;
     grid-template-areas: 
     "header" 
     "main" 
     "footer";
     grid-template-rows: 10vh 56vh 18vh;
+    grid-template-columns: 80vw;
 }
 header {
     background-color: aqua;
     grid-area: header;
-    margin: 0px 0px 7px -40px;
     /* centralizar título - h1 */
     display: flex;
     justify-content: center;
@@ -27,9 +26,7 @@ h1 {
 }
 main {
     background-color: azure;
-    width: 60vw;
     grid-area: main;
-    margin: auto;
     display: grid;
     grid-template-areas: 
     "aside main";
@@ -65,6 +62,9 @@ section.referencias {
 section.informacoes {
     width: 50vw;
 }
+form.formulario {
+    margin: 10px;
+}
 section.resultado {
     width: 50vw;
 }
@@ -72,5 +72,4 @@ section.resultado {
 footer {
     background-color: bisque;
     grid-area: footer;
-    margin: auto;
 }
