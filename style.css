@@ -5,19 +5,22 @@
 }
 body {
     background-color: rgb(177, 184, 147);
+    margin: 40px;
     width: 100vw;
     display: grid;
     grid-template-areas: 
-    "header"
-    "main"
+    "header" 
+    "main" 
     "footer";
+    grid-template-rows: 10vh 56vh 18vh;
 }
 header {
     background-color: aqua;
     grid-area: header;
-    margin: auto;
-
-    /* width: 100vw; */
+    margin: 0px 0px 7px -40px;
+    /* centralizar título - h1 */
+    display: flex;
+    justify-content: center;
 }
 h1 {
     font: normal normal 2em serif;
@@ -30,8 +33,10 @@ main {
     display: grid;
     grid-template-areas: 
     "aside main";
+    grid-template-columns: 7vw auto;
+    grid-template-rows: auto;
     /* deixar as duas áreas na parte de cima */
-    
+    /* precisa criar linhas e colunas para ajustar os elementos dentro dele */
 }
 aside.materiais {
     background-color: blue;
