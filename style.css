@@ -1,5 +1,11 @@
 @charset "UTF-8";
-
+:root {
+    --um: #F2BDBD;
+    --dois: #262624;
+    --tres: #A65233;
+    --quatro: #8C512E;
+    --cinco: #D96B43;
+}
 * {
     margin: 0px;
 }
@@ -15,7 +21,7 @@ article {
     align-items: center;
 }
 header {
-    background-color: aqua;
+    background-color: var(--tres);
     height: 8vh;
     width: 98vw;
     /* centralizar título - h1 */
