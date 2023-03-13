@@ -5,6 +5,7 @@
     --tres: #A65233;
     --quatro: #8C512E;
     --cinco: #D96B43;
+    --letras: white;
 }
 * {
     margin: 0px;
@@ -22,19 +23,24 @@ article {
 }
 header {
     background-color: var(--tres);
-    height: 8vh;
+    height: 12vh;
     width: 100vw;
+    box-shadow: 5px 8px 22px -12px var(--dois);
     /* centralizar título - h1 */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 h1 {
-    font: normal normal 2em serif;
+    font: normal normal 2.4em serif;
+    color: var(--letras);
 }
 main {
     width: 60vw;
     height: 100vh;
+    margin-top: 35px;
+    /* border-right: 1px solid var(--dois); */
+    box-shadow: 8px 12px 17px -12px var(--dois);
     display: grid;
     grid-template-areas:
     "aside section";
@@ -44,7 +50,9 @@ main {
 }
 aside.materiais {
     grid-area: aside;
-
+    margin-top: 30px;
+    width: 8vw;
+    box-shadow: 8px 12px 17px -12px var(--dois);
     /* background-color: var(); */
     display: flex;
     flex-direction: column;
@@ -53,14 +61,25 @@ aside.materiais {
 button.aside {
     width: 7vw;
     height: 5vh;
+    margin-left: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-size: 0.8vw;
     cursor: pointer;
     background-color: var(--cinco);
+    color: var(--letras);
+}
+div.legenda_section {
+    width: 45vw;
+    border-bottom: solid 1px var(--tres);
+}
+h2 {
+    margin: 15px 0px;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
 }
 section.referencias {
-    /* background-color: rgba(128, 128, 128, 0.26); */
     width: 53vw;
     grid-area: section;
     
@@ -71,9 +90,10 @@ section.referencias {
 }
 section.informacoes {
     background-color: var(--um);
-    margin-top: 25px;
+    margin-top: 30px;
     width: 45vw;
     height: 332px;
+    border-radius: 17px;
 }
 form {
     margin: 21px 0px 16px 35px;
@@ -85,10 +105,14 @@ label.das_informacoes {
     font: normal normal 1em Arial;
 }
 input {
+    height: 2vh;
     width: 21vw;
+    border: none;
+    border-radius: 11px;
 }
 .enviar_informacoes {
     background-color: var(--cinco);
+    color: var(--dois);
     margin: 5px 35px;
     border: none;
     border-radius: 7px;
@@ -100,12 +124,8 @@ section.resultado {
     background-color: var(--um);
     width: 45vw;
     height: 30vh;
+    border-radius: 17px;
 }
-section > h2 {
-    padding-top: 15px;
-    text-align: center;
-}
-
 footer {
     background-color: var(--tres);
     height: 50px;
