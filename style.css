@@ -58,7 +58,9 @@ aside.materiais {
     flex-direction: column;
     gap: 25px;
 }
-button.aside {
+.site, .video, .livro, .artigo, .trabalhos {
+    background-color: var(--cinco);
+    color: var(--letras);
     width: 7vw;
     height: 5vh;
     margin-left: 10px;
@@ -66,8 +68,7 @@ button.aside {
     border-radius: 15px;
     font-size: 0.8vw;
     cursor: pointer;
-    background-color: var(--cinco);
-    color: var(--letras);
+    text-decoration: none;
 }
 div.legenda_section {
     width: 45vw;
