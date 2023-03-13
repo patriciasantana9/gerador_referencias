@@ -8,53 +8,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>REFERÊNCIAS BIBLIOGRÁFICAS</h1></header>
-    <main class="tudo">
+    <article class="geral">
+        <header><h1>REFERÊNCIAS BIBLIOGRÁFICAS</h1></header>
+        <main class="tudo">
         
-        <aside class="materiais">
-
-            <button class="aside" class="site">SITE</button>
-            <button class="aside" class="video">VÍDEO</button>
-            <button class="aside" class="livro">LIVRO</button>
-            <button class="aside" class="artigo">ARTIGO EM PDF/ONLINE</button>
-            <button class="aside" class="trabalhos">TRABALHOS ACADÊMICOS</button>
-
-        </aside>
-
-        <!-- onde ficará  -->
-        <section class="referencias">
-            
-            <section class="informacoes">
-                
-                <form action="" class="fomulario">
-                    <label for="autor">AUTOR</label>
-                    <input type="text" name="lautor" id="autor">
-                </form>
-
-                <form action="" class="fomulario">
-                    <label for="titulo">TÍTULO</label>
-                    <input type="text" name="ltitulo" id="titulo">
-                </form>
-
-                <form action="" class="fomulario">
-                    <label for="disponivel">DISPONÍVEL EM:</label>
-                    <input type="text" name="ldisponivel" id="disponivel">
-                </form>
-
-                <form action="" class="fomulario">
-                    <label for="acesso">ACESSO EM:</label>
-                    <input type="text" name="lacesso" id="acesso">
-                </form>
-
+            <aside class="materiais">
+                <button class="aside" class="site">SITE</button>
+                <button class="aside" class="video">VÍDEO</button>
+                <button class="aside" class="livro">LIVRO</button>
+                <button class="aside" class="artigo">ARTIGO EM PDF/ONLINE</button>
+                <button class="aside" class="trabalhos">TRABALHOS ACADÊMICOS</button>
+            </aside>
+            <!-- onde ficará  -->
+            <section class="referencias">
+        
+                <section class="informacoes">
+        
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="autor">AUTOR</label>
+                        <input type="text" name="lautor" id="autor">
+                    </form>
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="titulo">TÍTULO</label>
+                        <input type="text" name="ltitulo" id="titulo">
+                    </form>
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="disponivel">DISPONÍVEL EM:</label>
+                        <input type="text" name="ldisponivel" id="disponivel">
+                    </form>
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="acesso">ACESSO EM:</label>
+                        <input type="text" name="lacesso" id="acesso">
+                    </form>
+                    <button type="submit" class="enviar_informacoes">ENVIAR</button>
+                </section>
+                <section class="resultado">
+        
+                    <h2>REFERÊNCIA PRONTA</h2>
+                    <!-- a referência pronta deverá aparecer aqui -->
+                </section>
             </section>
-
-            <section class="resultado">
-                
-                <h2>REFERÊNCIA PRONTA</h2>
-                <!-- a referência pronta deverá aparecer aqui -->
-            </section>
-        </section>
-    </main>    
+        </main>
+    </article>
     <footer>CRIADO POR PATRÍCIA SANTANA</footer> 
 
 </body>
