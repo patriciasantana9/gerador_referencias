@@ -23,7 +23,7 @@ article {
 header {
     background-color: var(--tres);
     height: 8vh;
-    width: 98vw;
+    width: 100vw;
     /* centralizar título - h1 */
     display: flex;
     justify-content: center;
@@ -44,7 +44,8 @@ main {
 }
 aside.materiais {
     grid-area: aside;
-    background-color: blue;
+
+    /* background-color: var(); */
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -56,10 +57,10 @@ button.aside {
     border-radius: 10px;
     font-size: 0.8vw;
     cursor: pointer;
-    /* background-color: ; */
+    background-color: var(--cinco);
 }
 section.referencias {
-    background-color: blueviolet;
+    /* background-color: rgba(128, 128, 128, 0.26); */
     width: 53vw;
     grid-area: section;
     
@@ -69,7 +70,7 @@ section.referencias {
     gap: 25px;
 }
 section.informacoes {
-    background-color: rgb(104, 110, 116);
+    background-color: var(--um);
     margin-top: 25px;
     width: 45vw;
     height: 332px;
@@ -87,7 +88,7 @@ input {
     width: 21vw;
 }
 .enviar_informacoes {
-    background-color: rgb(116, 117, 117);
+    background-color: var(--cinco);
     margin: 5px 35px;
     border: none;
     border-radius: 7px;
@@ -96,7 +97,7 @@ input {
     cursor: pointer;
 }
 section.resultado {
-    background-color: rgb(145, 137, 127);
+    background-color: var(--um);
     width: 45vw;
     height: 30vh;
 }
@@ -106,7 +107,7 @@ section > h2 {
 }
 
 footer {
-    background-color: bisque;
+    background-color: var(--tres);
     height: 50px;
     display: flex;
     justify-content: center;
