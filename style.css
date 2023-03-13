@@ -9,7 +9,6 @@ body {
     justify-content: center;
 }
 article {
-    background-color: rgb(177, 184, 147);
     width: 98vw; 
     display: flex;
     flex-direction: column; 
@@ -28,7 +27,6 @@ h1 {
     font: normal normal 2em serif;
 }
 main {
-    background-color: azure;
     width: 60vw;
     height: 100vh;
     display: grid;
@@ -67,11 +65,11 @@ section.referencias {
 section.informacoes {
     background-color: rgb(104, 110, 116);
     margin-top: 25px;
-    width: 35vw;
-    height: 37vh;
+    width: 45vw;
+    height: 332px;
 }
 form {
-    margin: 21px;
+    margin: 21px 0px 16px 35px;
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -84,7 +82,7 @@ input {
 }
 .enviar_informacoes {
     background-color: rgb(116, 117, 117);
-    margin: 0px 21px;
+    margin: 5px 35px;
     border: none;
     border-radius: 7px;
     width: 70px;
@@ -93,8 +91,12 @@ input {
 }
 section.resultado {
     background-color: rgb(145, 137, 127);
-    width: 35vw;
+    width: 45vw;
     height: 30vh;
+}
+section > h2 {
+    padding-top: 15px;
+    text-align: center;
 }
 
 footer {
