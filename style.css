@@ -129,6 +129,7 @@ section.resultado {
     background-color: var(--um);
     width: 45vw;
     height: 30vh;
+    padding: 20px;
     border-radius: 17px;
 }
 footer {
@@ -137,4 +138,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
