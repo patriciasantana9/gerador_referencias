@@ -16,6 +16,7 @@ body {
     justify-content: center;
 }
 article {
+    height: fit-content;
     width: 98vw; 
     display: flex;
     flex-direction: column; 
@@ -24,7 +25,7 @@ article {
 header {
     background-color: var(--tres);
     height: 12vh;
-    width: 100vw;
+    width: 99.5vw;
     box-shadow: 5px 8px 22px -12px var(--dois);
     /* centralizar título - h1 */
     display: flex;
@@ -36,23 +37,24 @@ h1 {
     color: var(--letras);
 }
 main {
-    width: 60vw;
-    height: 100vh;
+    width: 80vw;
+    height: 113vh; 
     margin-top: 35px;
     /* border-right: 1px solid var(--dois); */
     box-shadow: 8px 12px 17px -12px var(--dois);
     display: grid;
     grid-template-areas:
     "aside section";
-    grid-template-columns: 7vw auto;
+    grid-template-columns: 8vw auto;
     /* deixar as duas áreas na parte de cima */
     /* precisa criar linhas e colunas para ajustar os elementos dentro dele */
 }
 aside.materiais {
     grid-area: aside;
     margin-top: 30px;
-    width: 8vw;
-    box-shadow: 8px 12px 17px -12px var(--dois);
+    width: 10vw;
+    /* max-width: 10px; */
+    box-shadow: 8px 5px 17px -12px var(--dois);
     /* background-color: var(); */
     display: flex;
     flex-direction: column;
@@ -61,12 +63,12 @@ aside.materiais {
 .site, .video, .livro, .artigo, .trabalhos {
     background-color: var(--cinco);
     color: var(--letras);
-    width: 7vw;
+    width: 8vw;
     height: 5vh;
     margin-left: 10px;
     border: none;
     border-radius: 15px;
-    font-size: 0.8vw;
+    font-size: 10px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -81,7 +83,8 @@ h2 {
     font-weight: lighter;
 }
 section.referencias {
-    width: 53vw;
+    /*background-color: antiquewhite;*/
+    width: 72vw;
     grid-area: section;
     
     display: flex;
