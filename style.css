@@ -85,6 +85,7 @@ h2 {
 section.referencias {
     /*background-color: antiquewhite;*/
     width: 72vw;
+    height: fit-content;
     grid-area: section;
     
     display: flex;
