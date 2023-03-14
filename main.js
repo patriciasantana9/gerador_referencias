@@ -10,5 +10,7 @@ let resultado = document.querySelector("section.resultado");
 
 //criar função que organiza referencia de site
 function de_site() {
-    resposta.innerHTML = `${autor}, ${autor}. ${titulo}. `
+    //resultado
+    resultado.innerHTML = `${autor}, ${autor}. ${titulo}. Disponívem em: ${disponivel}. Acesso em: ${acesso}`;
 }
+button_send.addEventListener('click', de_site);
