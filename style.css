@@ -12,9 +12,6 @@
 }
 body {
     height: 100%;
-    /* display: flex; 
-    flex-direction: column;
-    justify-content: center;*/
 }
 article {
     height: fit-content;
@@ -45,22 +42,17 @@ main {
     width: 80vw;
     height: 113vh; 
     margin-top: 35px;
-    /* border-right: 1px solid var(--dois); */
-    box-shadow: 8px 12px 17px -12px var(--dois);
+    box-shadow: 4px 12px 17px -12px var(--dois);
     display: grid;
     grid-template-areas:
     "aside section";
     grid-template-columns: 8vw auto;
-    /* deixar as duas áreas na parte de cima */
-    /* precisa criar linhas e colunas para ajustar os elementos dentro dele */
 }
 aside.materiais {
     grid-area: aside;
     margin-top: 30px;
     width: 10vw;
-    /* max-width: 10px; */
-    box-shadow: 8px 5px 17px -12px var(--dois);
-    /* background-color: var(); */
+    box-shadow: 7px -2px 14px -14px var(--dois);
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -88,7 +80,6 @@ h2 {
     font-weight: lighter;
 }
 section.referencias {
-    /*background-color: antiquewhite;*/
     width: 72vw;
     height: fit-content;
     grid-area: section;
@@ -104,6 +95,7 @@ section.informacoes {
     width: 45vw;
     height: 332px;
     border-radius: 17px;
+    box-shadow: 3px 6px 17px -12px var(--dois);
 }
 form {
     margin: 21px 0px 16px 35px;
@@ -136,6 +128,7 @@ section.resultado {
     height: fit-content;
     padding: 20px;
     border-radius: 17px;
+    box-shadow: 3px 6px 17px -12px var(--dois);
 }
 footer {
     color: var(--um);
