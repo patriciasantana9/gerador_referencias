@@ -9,7 +9,14 @@ let button_send = document.querySelector(".enviar_informacoes");
 let resultado = document.querySelector("section.resultado");
 
 //criar função que organiza referencia de site
+
 function de_site() {
-    resultado.innerHTML = `${autor.value}, ${autor.value}. ${titulo.value}. Disponívem em: ${disponivel.value}. Acesso em: ${acesso.value}`;
+    const fname = "";
+    const lname = "";
+    //console.log(autor.value.slice(-2));
+    
+    
+
+    resultado.innerHTML = `${lname}, ${fname}. ${titulo.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
 }
 button_send.addEventListener('click', de_site);
