@@ -11,9 +11,10 @@
     margin: 0px;
 }
 body {
-    display: flex;
+    height: 100%;
+    /* display: flex; 
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
 }
 article {
     height: fit-content;
@@ -36,7 +37,7 @@ h1 {
     font: normal normal 2.4em serif;
     color: var(--letras);
 }
-.titulo_section {
+h1.titulo_section {
     color: var(--dois);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -132,15 +133,15 @@ input {
 section.resultado {
     background-color: var(--um);
     width: 45vw;
-    height: 30vh;
+    height: fit-content;
     padding: 20px;
     border-radius: 17px;
 }
 footer {
+    color: var(--um);
     background-color: var(--tres);
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
