@@ -36,6 +36,10 @@ h1 {
     font: normal normal 2.4em serif;
     color: var(--letras);
 }
+.titulo_section {
+    color: var(--dois);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 main {
     width: 80vw;
     height: 113vh; 
