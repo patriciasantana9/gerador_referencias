@@ -11,13 +11,15 @@ let resultado = document.querySelector("section.resultado");
 //criar função que organiza referencia de site
 
 function de_site() {
-    const fname = "";
-    const lname = "";
-    const names = autor.value;
-    //console.log(autor.value.slice(-2));
-    lname = names(names.lenght-1);
+
+    let full_name = autor.value;
+    let names = full_name.split(" ");
+    let lname = names[names.lenght-1];
+    let fname;
+    //exibir todas as substrings excento a última
     
 
-    resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
+    resultado.innerHTML = `${lname}`;
+   // resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
 }
 button_send.addEventListener('click', de_site);
