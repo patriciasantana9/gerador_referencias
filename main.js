@@ -14,7 +14,7 @@ function de_site() {
 
     let full_name = autor.value;
     let names = full_name.split(" ");
-    let lname = names[names.lenght-1];
+    let lname = names[names.length-1];
     let fname;
     //exibir todas as substrings excento a última
     
