@@ -16,9 +16,9 @@ function de_site() {
     let names = full_name.split(" ");
     let lname = names[names.length-1];
     let fname;
+    //if (names.length !== )
     //exibir todas as substrings excento a última
-    
-
+    //"Patrícia", "Souza", "de", "Santana" [-1]
     resultado.innerHTML = `${lname}`;
    // resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
 }
