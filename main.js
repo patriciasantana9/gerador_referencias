@@ -18,7 +18,7 @@ function de_site() {
 
     for (let i = 0; i < names.length; i++) {
         if (names[i] !== -1) {
-            
+            //deve retornar mais de uma substring dentro da mesma variável; como?
             return names[i];
         }
     }
