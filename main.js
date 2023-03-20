@@ -14,12 +14,19 @@ function de_site() {
 
     let full_name = autor.value;
     let names = full_name.split(" ");
+    //"Patrícia", "Souza", "de", "Santana" 
+
+    for (let i = 0; i < names.length; i++) {
+        if (names[i] !== -1) {
+            
+            return names[i];
+        }
+    }
+    let fname = names[i];
     let lname = names[names.length-1];
-    let fname;
-    //if (names.length !== )
-    //exibir todas as substrings excento a última
-    //"Patrícia", "Souza", "de", "Santana" [-1]
-    resultado.innerHTML = `${lname}`;
-   // resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
+
+    //exibir todas as substrings (demais indices) excento a última
+
+    resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
 }
 button_send.addEventListener('click', de_site);
