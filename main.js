@@ -16,13 +16,15 @@ function de_site() {
     let names = full_name.split(" ");
     //"Patrícia", "Souza", "de", "Santana" 
 
+    let fname;
+    //let fname = [];
     for (let i = 0; i < names.length; i++) {
         if (names[i] !== -1) {
             //deve retornar mais de uma substring dentro da mesma variável; como?
-            return names[i];
+            fname = names[i];
         }
     }
-    let fname = names[i];
+    
     let lname = names[names.length-1];
 
     //exibir todas as substrings (demais indices) excento a última
