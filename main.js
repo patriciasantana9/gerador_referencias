@@ -14,18 +14,16 @@ function de_site() {
 
     let full_name = autor.value;
     let names = full_name.split(" ");
-    //"Patrícia", "Souza", "de", "Santana" 
+    //"Patrícia", "Souza", "de", "Santana" //agora é array?
 
-    let fname = "";
+    let fname = " ";
     for (let i = 0; i < names.length; i++) {
-        if (names[i] !== names[-1]) {
-            fname += names[i];
+        if (names[i] !== names[-1]) { //deve parar quando encontrar a última substring e manter um espaço entre as su.
+            fname += names[i] + " ";
         }
     }
     
     let lname = names[names.length-1];
-
-    //exibir todas as substrings (demais indices) excento a última
 
     resultado.innerHTML = `${lname}, ${fname}. ${title.value}. Disponível em: ${disponivel.value}. Acesso em: ${acesso.value}`;
 }
