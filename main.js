@@ -21,9 +21,9 @@ function de_site() {
     
     let lname = names[names.length-1];
     //formatar data: DD mes AAAA
-    //let acesso_em = ;
+    let acesso_em = acesso.value;
 
-    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${disponivel.value}. Acesso em: ${acesso_em} </p>`;
+    resultado.innerHTML = `<p>${lname.toUpperCase()}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${disponivel.value}. Acesso em: ${acesso_em} </p>`;
 
     //https://willianjusten.com.br/formatando-datas-com-js-puro
     //https://www.blogson.com.br/como-formatar-data-em-javascript-do-jeito-facil/
