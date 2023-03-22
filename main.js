@@ -16,12 +16,10 @@ function de_site() {
     let names = full_name.split(" ");
     //"Patrícia", "Souza", "de", "Santana" 
 
-    let fname;
-    //let fname = [];
+    let fname = "";
     for (let i = 0; i < names.length; i++) {
-        if (names[i] !== -1) {
-            //deve retornar mais de uma substring dentro da mesma variável; como?
-            fname = names[i];
+        if (names[i] !== names[-1]) {
+            fname += names[i];
         }
     }
     
