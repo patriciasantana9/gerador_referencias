@@ -1,7 +1,7 @@
-let autor = document.querySelector("#autor");
 let title = document.querySelector("#titulo");
-let disponivel = document.querySelector("#disponivel");
+let available = document.querySelector("#disponivel");
 let acesso = document.querySelector("#acesso");
+let autor = document.querySelector("#autor");
 
 let button_send = document.querySelector(".enviar_informacoes");
 
@@ -9,27 +9,67 @@ let resultado = document.querySelector("section.resultado");
 
 //fazer modularização
 
-let full_name = autor.value;
-//substrings
-let names = full_name.split(" ");
 let fname = " ";
-for (let i = 0; i < names.length-1; i++) {
-    fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
+let lname = " ";
+
+//nome
+function name(){
+    let full_name = autor.value;
+    //substrings
+    let names = full_name.split(" ");
+
+    for (let i = 0; i < names.length-1; i++) {
+        fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
+    }
+    lname = names[names.length-1];
+    //quando faltar o nome do autor 
 }
-let lname = names[names.length-1];
+//título
+let title_f = title.value;
+//subtítulo
+//
+
+//disponível em
+let available_f = available.value;
+
+//data de acesso
 //formatar data: DD mes AAAA
 let acesso_em = acesso.value;
 
+//nome do canal
+//
+
+//data da publicação
+//
+
+//edição do livro
+//
+
+//local de publicação
+//
+
+//editora
+//
+
+//num. de folhas/volumes
+//
+
+//categoria da pesquisa
+//
+
+//instituição
+//
+
+
 //referencia de site
 function de_site() {
-    resultado.innerHTML = `<p>${lname.toUpperCase()}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${disponivel.value}. Acesso em: ${acesso_em} </p>`;
+    resultado.innerHTML = `<p>${lname.toUpperCase()}, ${fname}. <strong>${title_f}</strong>. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
 
     //https://willianjusten.com.br/formatando-datas-com-js-puro
     //https://www.blogson.com.br/como-formatar-data-em-javascript-do-jeito-facil/
 }
 button_send.addEventListener('click', de_site);
 
-//quando faltar o nome do autor 
 
 function de_video(){
     /*
