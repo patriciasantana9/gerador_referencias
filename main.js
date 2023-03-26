@@ -1,7 +1,8 @@
 let title = document.querySelector("#titulo");
+let subtitle = document.querySelector("#subtitulo");
 let available = document.querySelector("#disponivel");
 let acesso = document.querySelector("#acesso");
-let autor = document.querySelector("#autor");
+let author = document.querySelector("#autor");
 
 let button_send = document.querySelector(".enviar_informacoes");
 
@@ -12,23 +13,18 @@ let resultado = document.querySelector("section.resultado");
 //nome
 let fname = " ";
 let lname = " ";
-function name(){
-    let full_name = autor.value;
-    //substrings
-    let names = full_name.split(" ");
-
-    for (let i = 0; i < names.length-1; i++) {
-        fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
-    }
-    lname = names[names.length-1].toUpperCase();
-    //quando faltar o nome do autor 
+let full_name = author.value;
+let names = full_name.split(" ");
+for (let i = 0; i < names.length-1; i++) {
+    fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
 }
+lname = names[names.length-1].toUpperCase();
 
 //título
 let title_f = title.value;
 
 //subtítulo
-let subtitle_f;
+let subtitle_f = subtitle.value;
 
 //disponível em
 let available_f = available.value;
@@ -66,18 +62,18 @@ let institution_f;
 
 //referencia de site
 function de_site() {
-    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
-
+    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>: ${subtitle_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
+/*    if (subtitle_f !== ""){
+    } else {
+        resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
+    }
+*/
     //https://willianjusten.com.br/formatando-datas-com-js-puro
     //https://www.blogson.com.br/como-formatar-data-em-javascript-do-jeito-facil/
 }
 button_send.addEventListener('click', de_site);
 
-
 function de_video(){
-    /*
-    SOBRENOME, Nome do autor do vídeo (ou nome do canal). Título do vídeo. YouTube, data da publicação. Disponível em: link do vídeo. Acesso em: data que o vídeo foi acessado.
-    */
     resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
 
     resultado.innerHTML = `<p>${channel_f}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
