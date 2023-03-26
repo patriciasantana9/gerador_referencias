@@ -78,7 +78,9 @@ function de_video(){
     /*
     SOBRENOME, Nome do autor do vídeo (ou nome do canal). Título do vídeo. YouTube, data da publicação. Disponível em: link do vídeo. Acesso em: data que o vídeo foi acessado.
     */
+    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
 
+    resultado.innerHTML = `<p>${channel_f}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
 }
 function de_livro(){
     /*
@@ -93,6 +95,7 @@ function de_livro(){
 function de_artigo(){
     /*
     com autor: SOBRENOME, Nome. Título da matéria. Nome do site, ano. Disponível em: <URL>. Acesso em: dia, mês e ano.
+    
     sem autor: TÍTULO da matéria. Nome do site, ano. Disponível em: <URL>. Acesso em: dia, mês e ano. 
     */
 }
@@ -100,4 +103,7 @@ function de_trabalhos(){
     /*
     SOBRENOME, Nome. Título: subtítulo (se houver). Ano de apresentação. Número de folhas ou volumes. Categoria (área de concentração) – Instituição, Local, ano da defesa. 
     */
+    resultado.innerHTML = `<p> ${lname}, ${fname}. ${title_f}: ${subtitle_f}. ${publication_year_f}. ${volum_f}. ${category_f} - ${institution_f}, ${publication_local_f}, ${publication_year_f}.</p>`
+    
+    resultado.innerHTML = `<p> ${lname}, ${fname}. ${title_f}. ${publication_year_f}. ${volum_f}. ${category_f} - ${institution_f}, ${publication_local_f}, ${publication_year_f}.</p>`
 }
