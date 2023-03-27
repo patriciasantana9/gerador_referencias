@@ -31,11 +31,11 @@ function de_site() {
     }
 }
 button_send.addEventListener('click', de_site);
-/*
-function de_video(){
-    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
 
-    resultado.innerHTML = `<p>${channel_f}. <strong>${title_f}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available_f}. Acesso em: ${acesso_em} </p>`;
+function de_video(){
+    resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
+
+    resultado.innerHTML = `<p>${channel_f}. <strong>${title.value}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
 }
 /*
 function de_livro(){
