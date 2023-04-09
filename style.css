@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root {
     --um: #F2BDBD;
     --dois: #262624;
@@ -10,22 +11,24 @@
 * {
     margin: 0px;
 }
-body {
+/* body {
     height: 100%;
-}
+} */
 article {
-    height: fit-content;
-    width: 98vw; 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    height: 100vh;
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 20vw 40vw 40vw;
+    grid-template-rows: 64px auto 48px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer"; 
 }
 header {
+    grid-area: header;
     background-color: var(--tres);
-    height: 12vh;
-    width: 99.5vw;
     box-shadow: 5px 8px 22px -12px var(--dois);
-    /* centralizar título - h1 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,28 +36,27 @@ header {
 h1 {
     font: normal normal 2.4em serif;
     color: var(--letras);
+    text-align: center;
 }
 h1.titulo_section {
     color: var(--dois);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 main {
-    width: 80vw;
-    height: 113vh; 
-    margin-top: 35px;
+    grid-area: main;
+    margin-top: 32px;
     box-shadow: 4px 12px 17px -12px var(--dois);
-    display: grid;
-    grid-template-areas:
-    "aside section";
-    grid-template-columns: 8vw auto;
 }
 aside.materiais {
     grid-area: aside;
-    margin-top: 30px;
-    width: 10vw;
-    box-shadow: 7px -2px 14px -14px var(--dois);
+    justify-self: flex-end;
+    margin-top: 32px;
+    width: 16vw;
+    box-shadow: 7px 4px 14px -14px var(--dois);
+
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 25px;
 }
 .site, .video, .livro, .artigo, .trabalhos {
@@ -68,6 +70,9 @@ aside.materiais {
     font-size: 10px;
     cursor: pointer;
     text-decoration: none;
+}
+.site {
+    margin-top: 24px;
 }
 div.legenda_section {
     width: 45vw;
@@ -131,9 +136,11 @@ section.resultado {
     box-shadow: 3px 6px 17px -12px var(--dois);
 }
 footer {
+    grid-area: footer;
     color: var(--um);
-    background-color: var(--tres);
-    height: 50px;
+    background-color: gainsboro;
+    /* background-color: var(--tres);
+    height: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;    
