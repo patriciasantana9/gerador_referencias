@@ -35,7 +35,7 @@ h1 {
     color: var(--letras);
     text-align: center;
 }
-h1.titulo_section {
+.titulo_section {
     color: var(--dois);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -76,7 +76,7 @@ aside.materiais {
     margin-top: 24px;
 }
 div.legenda_section {
-    width: 45vw;
+    width: 64vw;
     border-bottom: solid 1px var(--tres);
 }
 h2 {
@@ -84,6 +84,7 @@ h2 {
     font-size: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
+    text-align: center;
 }
 section.referencias {
     width: 72vw;
@@ -95,11 +96,12 @@ section.referencias {
     align-items: center;
     gap: 25px;
 }
-section.informacoes {
+section.informacoes, section.resultado {
     background-color: var(--um);
-    margin-top: 30px;
+    padding: 16px;
+    margin-top: 32px;
     width: 45vw;
-    height: 332px;
+    height: fit-content;
     border-radius: 17px;
     box-shadow: 3px 6px 17px -12px var(--dois);
 }
@@ -113,7 +115,7 @@ label.das_informacoes {
     font: normal normal 1em Arial;
 }
 input {
-    height: 2vh;
+    height: 3vh;
     width: 21vw;
     border: none;
     border-radius: 11px;
@@ -131,11 +133,12 @@ input {
 section.resultado {
     background-color: var(--um);
     width: 45vw;
-    height: fit-content;
+    height: 128px;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 17px;
     box-shadow: 3px 6px 17px -12px var(--dois);
-}
+} 
 footer {
     grid-area: footer;
     color: var(--dois);
@@ -171,9 +174,30 @@ footer {
         width: 69vw;
         height: fit-content;
         justify-self: center;
-
+        
         display: flex;
         flex-direction: column;
         gap: 25px;
+    }
+    h2 {
+        font: normal normal 1.4em serif;
+    }
+    section.informacoes, section.resultado {
+        background-color: var(--um);
+        padding: 16px;
+        margin-top: 32px;
+        width: 64vw;
+        height: fit-content;
+        border-radius: 17px;
+        box-shadow: 3px 6px 17px -12px var(--dois);
+    }
+    section.resultado {
+        height: 120px;
+    }
+    form {
+        margin: 18px 0px 22px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
     }
 }
