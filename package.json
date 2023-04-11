@@ -1,0 +1,20 @@
+{
+  "name": "gerador_referencias",
+  "version": "1.0.0",
+  "description": "Gerador de referências segundo norma ABNT.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciasantana9/gerador_referencias.git"
+  },
+  "keywords": ["referencias"],
+  "author": "Patrícia Santana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patriciasantana9/gerador_referencias/issues"
+  },
+  "homepage": "https://github.com/patriciasantana9/gerador_referencias#readme"
+}
