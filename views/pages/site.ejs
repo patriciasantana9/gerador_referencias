@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- acrescentar head.ejs -->
+<%- include('../partials/head'); %>
 
 <!-- page2 -->
 <body>
     <article class="geral">
         <header><h1>REFERÊNCIAS BIBLIOGRÁFICAS</h1></header>
         <!--acrescentar aside.ejs  -->
+        <%- include('../partials/aside'); %>
         <main class="tudo">
             <!-- onde ficará  -->
             <section class="referencias">
@@ -37,7 +38,8 @@
                     </form>
                     <button type="submit" class="enviar_informacoes">ENVIAR</button>
                 </section>        
-                    <!-- acrescentar done.ejs -->
+                <!-- acrescentar done.ejs -->
+                <%- include('../partials/done'); %>
             </section>
         </main>
         <footer>CRIADO POR PATRÍCIA SANTANA</footer> 

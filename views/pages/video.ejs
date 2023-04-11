@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- acrescentar head.ejs -->
+<%- include('../partials/head'); %>
 
-<!-- page3 -->
 <body>
     <article class="geral">
         <header><h1>REFERÊNCIAS BIBLIOGRÁFICAS</h1></header>
-        <aside class="materiais">
-            <button class="site"><a href="site.html" class="site">SITE</a></button>
-            <button class="video"><a href="video.html" class="video">VÍDEO</a></button>
-            <button class="livro"><a href="livro.html" class="livro">LIVRO</a></button>
-            <button class="artigo"><a href="artigo.html" class="artigo">ARTIGO EM PDF/ONLINE</a></button>
-            <button class="trabalhos"><a href="trabalhos.html" class="trabalhos">TRABALHOS ACADÊMICOS</a></button>
-        </aside>
-        <main class="tudo">     
-            <!-- onde ficará  -->
+        <%- include('../partials/aside'); %>
+        <main class="tudo">
             <section class="referencias">
                 <div class="legenda_section">
                     <h2>INFORMAÇÕES PARA REFERÊNCIA</h2>
@@ -44,7 +36,7 @@
                     </form>
                     <button type="submit" class="enviar_informacoes">ENVIAR</button>
                 </section>
-                    <!-- acrescentar done.ejs -->
+                <%- include('../partials/done'); %>
             </section>
         </main>
         <footer>CRIADO POR PATRÍCIA SANTANA</footer> 
