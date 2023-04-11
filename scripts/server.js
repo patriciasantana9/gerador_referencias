@@ -4,23 +4,24 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.get("/", function(res, res){
-    res.render("index");
+app.get("/", function(req, res){
+    res.render("pages/index");
 })
-app.get("/site", function(res, res){
-    res.render("site");
+app.get("/site", function(req, res){
+    res.render("pages/site");
 })
-app.get("/livro", function(res, res){
-    res.render("livro");
+app.get("/livro", function(req, res){
+    res.render("pages/livro");
 })
-app.get("/video", function(res, res){
-    res.render("video");
+app.get("/video", function(req, res){
+    res.render("pages/video");
 })
-app.get("/artigo", function(res, res){
-    res.render("artigo");
+app.get("/artigo", function(req, res){
+    res.render("pages/artigo");
 })
-app.get("/trabalhos", function(res, res){
-    res.render("trabalhos");
+app.get("/trabalhos", function(req, res){
+    res.render("pages/trabalhos");
 })
 
 app.listen(8080);
+console.log('rodando')
