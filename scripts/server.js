@@ -22,3 +22,5 @@ app.get("/artigo", function(res, res){
 app.get("/trabalhos", function(res, res){
     res.render("trabalhos");
 })
+
+app.listen(8080);
