@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+:root {
+    --um: #F2BDBD;
+    --dois: #262624;
+    --tres: #A65233;
+    --quatro: #8C512E;
+    --cinco: #D96B43;
+    --letras: white;
+}
+* {
+    margin: 0px;
+}
+article {
+    height: 100vh;
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 20vw 40vw 40vw;
+    grid-template-rows: 88px auto 48px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer"; 
+}
+header {
+    grid-area: header;
+    background-color: var(--tres);
+    box-shadow: 5px 8px 22px -12px var(--dois);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font: normal normal 2.4em serif;
+    color: var(--letras);
+    text-align: center;
+}
+.titulo_section {
+    color: var(--dois);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main {
+    grid-area: main;
+    width: 70vw;
+    margin-top: 32px;
+    box-shadow: 4px 12px 17px -12px var(--dois);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+aside.materiais {
+    grid-area: aside;
+    justify-self: flex-end;
+    margin-top: 32px;
+    width: 95%;
+    box-shadow: 7px 4px 14px -14px var(--dois);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.site, .video, .livro, .artigo, .trabalhos {
+    background-color: var(--cinco);
+    color: var(--letras);
+    width: 113px;
+    height: 5vh;
+    margin-left: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.site {
+    margin-top: 24px;
+}
+div.legenda_section {
+    width: 64vw;
+    border-bottom: solid 1px var(--tres);
+}
+h2 {
+    margin: 15px 0px;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+section.referencias {
+    width: 72vw;
+    height: fit-content;
+    grid-area: section;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+section.informacoes, section.resultado {
+    background-color: var(--um);
+    padding: 16px;
+    margin-top: 32px;
+    width: 45vw;
+    height: fit-content;
+    border-radius: 17px;
+    box-shadow: 3px 6px 17px -12px var(--dois);
+}
+form {
+    margin: 21px 0px 16px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+label.das_informacoes {
+    font: normal normal 1em Arial;
+}
+input {
+    height: 3vh;
+    width: 21vw;
+    border: none;
+    border-radius: 11px;
+}
+.enviar_informacoes {
+    background-color: var(--cinco);
+    color: var(--dois);
+    margin: 5px 35px;
+    border: none;
+    border-radius: 7px;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+}
+section.resultado {
+    background-color: var(--um);
+    width: 45vw;
+    height: 128px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 17px;
+    box-shadow: 3px 6px 17px -12px var(--dois);
+} 
+footer {
+    grid-area: footer;
+    color: var(--dois);
+    background-color: var(--quatro);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font: normal normal 1.7em serif;
+    }
+    aside.materiais {
+        justify-self: center;
+        width: 113px;
+    }
+    .site, .video, .livro, .artigo, .trabalhos {
+        width: 84px;
+        height: 5vh;
+        font-size: 9px;
+    }
+    main {
+        width: 73vw;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center; 
+    }
+    section.referencias {
+        width: 69vw;
+        height: fit-content;
+        justify-self: center;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    h2 {
+        font: normal normal 1.4em serif;
+    }
+    section.informacoes, section.resultado {
+        background-color: var(--um);
+        padding: 16px;
+        margin-top: 32px;
+        width: 64vw;
+        height: fit-content;
+        border-radius: 17px;
+        box-shadow: 3px 6px 17px -12px var(--dois);
+    }
+    section.resultado {
+        height: 120px;
+    }
+    form {
+        margin: 18px 0px 22px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+}
