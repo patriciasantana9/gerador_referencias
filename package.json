@@ -10,11 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/patriciasantana9/gerador_referencias.git"
   },
-  "keywords": ["referencias"],
+  "keywords": [
+    "referencias"
+  ],
   "author": "Patrícia Santana",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/patriciasantana9/gerador_referencias/issues"
   },
-  "homepage": "https://github.com/patriciasantana9/gerador_referencias#readme"
+  "homepage": "https://github.com/patriciasantana9/gerador_referencias#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
 }
