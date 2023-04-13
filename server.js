@@ -1,9 +1,12 @@
+//importação e instanciação do express
 import express from 'express';
 
 const app = express();
 
+//para rodar .ejs
 app.set("view engine", "ejs");
 
+//função para renderizar páginas
 app.get("/", function(req, res){
     res.render("pages/index");
 })
@@ -23,6 +26,7 @@ app.get("/trabalhos", function(req, res){
     res.render("pages/trabalhos");
 })
 
+//acessar elementos estáticos (css e js) no dir. public
 app.use(express.static('public'));
 
 app.listen(8080);
