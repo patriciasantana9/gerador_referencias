@@ -1,4 +1,10 @@
-let author = document.querySelector("#autor");
+let button_send = document.querySelector(".enviar_informacoes");
+function teste () {
+    console.log('MAIN.JS FUNCIONA');
+}
+button_send.addEventListener('click', teste);
+
+/*let author = document.querySelector("#autor");
 let title = document.querySelector("#titulo");
 let subtitle = document.querySelector("#subtitulo");
 let available = document.querySelector("#disponivel");
@@ -47,15 +53,13 @@ function de_livro(){
 
     resultado.innerHTML = `<p> ${lname}, ${fname}. ${title_f}: ${subtitle_f}. ${edition_f}. ${publication_local_f}: ${editor_f}, ${publication_year_f}.</p>`
 }
-*/
-/*
+
 function de_artigo(){
     com autor: SOBRENOME, Nome. Título da matéria. Nome do site, ano. Disponível em: <URL>. Acesso em: dia, mês e ano.
     
     sem autor: TÍTULO da matéria. Nome do site, ano. Disponível em: <URL>. Acesso em: dia, mês e ano. 
 }
-*/
-/*
+
 function de_trabalhos(){
     resultado.innerHTML = `<p> ${lname}, ${fname}. ${title_f}: ${subtitle_f}. ${publication_year_f}. ${volum_f}. ${category_f} - ${institution_f}, ${publication_local_f}, ${publication_year_f}.</p>`
     
