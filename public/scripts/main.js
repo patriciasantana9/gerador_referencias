@@ -1,10 +1,4 @@
-let button_send = document.querySelector(".enviar_informacoes");
-function teste () {
-    console.log('MAIN.JS FUNCIONA');
-}
-button_send.addEventListener('click', teste);
-
-/*let author = document.querySelector("#autor");
+let author = document.querySelector("#autor");
 let title = document.querySelector("#titulo");
 let subtitle = document.querySelector("#subtitulo");
 let available = document.querySelector("#disponivel");
