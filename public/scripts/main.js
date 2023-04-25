@@ -4,14 +4,18 @@ let subtitle = document.querySelector("#subtitulo");
 let available = document.querySelector("#disponivel");
 let acess = document.querySelector("#acesso");
 
-let button_send = document.querySelector(".enviar_informacoes");
+let send_site = document.querySelector("button.enviar_site");
 
 let resultado = document.querySelector("section.resultado");
 
+console.log('main.js ok')
+
 //fazer modularização
 
-//referencia de site
+//referência de site
 function de_site() {
+    console.log('SITE OK');
+    
     let fname = "";
     let lname = "";
     let full_name = author.value;
@@ -30,8 +34,8 @@ function de_site() {
         resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
     }
 }
-button_send.addEventListener('click', de_site);
-
+send_site.addEventListener('click', de_site);
+/*
 function de_video(){
     resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
 
