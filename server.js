@@ -1,6 +1,5 @@
 //importação e instanciação do express
 import express from 'express';
-
 const app = express();
 
 //para rodar .ejs
