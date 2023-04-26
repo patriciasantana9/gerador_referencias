@@ -9,38 +9,59 @@
         <%- include('../partials/aside'); %>
         <main class="tudo">
             <section class="referencias">
+
                 <div class="legenda_section">
                     <h2>INFORMAÇÕES PARA REFERÊNCIA</h2>
                 </div>
+
                 <section class="informacoes">
         
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="autor">AUTOR (se houver)</label>
-                        <input type="text" name="lautor" id="autor">
+                        <label class="das_informacoes" for="channel">CANAL (se não houver autor)</label>
+                        <input type="text" name="lchannel" id="channel">
                     </form>
+
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="author">AUTOR (se houver)</label>
+                        <input type="text" name="lauthor" id="author">
+                    </form>
+
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="titulo">TÍTULO</label>
-                        <input type="text" name="ltitulo" id="titulo">
-                    </form>                    
+                        <input type="text" name="ltitle" id="title">
+                    </form>     
+
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="titulo">SUBTÍTULO</label>
-                        <input type="text" name="lsubtitulo" id="subtitulo">
-                    </form>                    
-                    <form action="" class="fomulario">
-                        <label class="das_informacoes" for="disponivel">DISPONÍVEL EM:</label>
-                        <input type="text" name="ldisponivel" id="disponivel">
-                    </form>
+                        <label class="das_informacoes" for="subtitle">SUBTÍTULO</label>
+                        <input type="text" name="lsubtitle" id="subtitle">
+                    </form>  
+                    
                     <form action="" class="formulario">
-                        <label class="das_informacoes" for="acesso">ACESSO EM: </label>
-                        <input type="date" name="lacesso" id="acesso">
+                        <label class="das_informacoes" for="publication" >PUBLICADO EM:</label>
+                        <input type="date" name="lpublication" id="publication">
                     </form>
+
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="available">DISPONÍVEL EM:</label>
+                        <input type="text" name="lavailable" id="available">
+                    </form>
+
+                    <form action="" class="formulario">
+                        <label class="das_informacoes" for="acess">ACESSO EM: </label>
+                        <input type="date" name="laccess" id="access">
+                    </form>
+
                     <button type="submit" class="send_video">ENVIAR</button>
+
                 </section>
+
                 <%- include('../partials/done'); %>
             </section>
         </main>
         <footer>CRIADO POR PATRÍCIA SANTANA</footer> 
     </article>
-    <%- include('../partials/script'); %>
+
+    <script src="/scripts/video.js"></script>
+    <!-- <%- include('../partials/script'); %> -->
 </body>
 </html>
