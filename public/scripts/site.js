@@ -1,9 +1,4 @@
-//de todos
-let author = document.querySelector("#author");
-let title = document.querySelector("#title");
-let subtitle = document.querySelector("#subtitle");
-let available = document.querySelector("#available");
-let access = document.querySelector("#access");
+console.log('site.js ok')
 
 //para evento
 let send_site = document.querySelector("button.send_site");
@@ -11,31 +6,44 @@ let send_site = document.querySelector("button.send_site");
 //para impressão do resultado
 let resultado = document.querySelector("section.resultado");
 
-console.log('main.js ok')
+//inputs
+let author = document.querySelector("input#author");
+let title = document.querySelector("input#title");
+let subtitle = document.querySelector("input#subtitle");
+let available = document.querySelector("input#available");
+let access = document.querySelector("input#access");
 
 //fazer modularização
 
-//formatar data: DD mes AAAA
-let access_in = access.value;
+//extrair nomes de author
+let fname = "";
+let lname = "";
 
+//função para separar nomes
 function names () {
-    let fname = "";
-    let lname = "";
     let full_name = author.value;
     let names = full_name.split(" ");
     for (let i = 0; i < names.length-1; i++) {
-        fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
+        //eliminar espaço depois da penúltima substring
+        fname += names[i] + " ";    
     }
     lname = names[names.length-1].toUpperCase();
 }
+
 //referência de site
 function de_site() {
     names();
     
-    if (subtitle.value.length === 0){
-        resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
+    //checar se possui informações importantes
+    if (author.value.length === 0) {
+        alert("Por favor, informe os dados solicitados.")
     } else {
-        resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. Disponível em: ${available.value}. Acesso em: ${access_in} </p>`;
+        //checar se tem subtítulo
+        if (subtitle.value.length !== 0){
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. Disponível em: ${available.value}. Acesso em: ${access.value} </p>`;
+        } else {
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${available.value}. Acesso em: ${access.value} </p>`;
+        }
     }
 }
 send_site.addEventListener('click', de_site);
