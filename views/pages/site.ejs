@@ -10,32 +10,39 @@
         <!--acrescentar aside.ejs  -->
         <%- include('../partials/aside'); %>
         <main class="tudo">
-            <!-- onde ficará  -->
+
             <section class="referencias">
                 <div class="legenda_section">
                     <h2 class="titulo_section">Informações para referência</h2>
                 </div>
-                <section class="informacoes">       
+
+                <section class="informacoes"> 
+
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="author">AUTOR</label>
                         <input type="text" name="lauthor" id="author">
                     </form>
+
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="title">TÍTULO</label>
                         <input type="text" name="ltitle" id="title">
-                    </form>                    
+                    </form> 
+
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="subtitle">SUBTÍTULO</label>
                         <input type="text" name="lsubtitle" id="subtitle">
-                    </form>                    
+                    </form> 
+
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="available">DISPONÍVEL EM:</label>
                         <input type="text" name="lavailable" id="available">
                     </form>
+
                     <form action="" class="formulario">
                         <label class="das_informacoes" for="access">ACESSO EM: </label>
                         <input type="date" name="laccess" id="access">
                     </form>
+
                     <button type="submit" class="send_site">ENVIAR</button>
                 </section>        
                 <!-- acrescentar done.ejs -->
@@ -44,6 +51,7 @@
         </main>
         <footer>CRIADO POR PATRÍCIA SANTANA</footer> 
     </article>
-    <%- include('../partials/script'); %>
+    <script src="/scripts/site.js"></script>
+    <!-- <%- include('../partials/script'); %> -->
 </body>
 </html>
