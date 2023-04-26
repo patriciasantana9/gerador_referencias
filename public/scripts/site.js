@@ -5,19 +5,20 @@ let subtitle = document.querySelector("#subtitle");
 let available = document.querySelector("#available");
 let access = document.querySelector("#access");
 
+//para evento
 let send_site = document.querySelector("button.send_site");
-let send_video = document.querySelector("button.send_video");
 
+//para impressão do resultado
 let resultado = document.querySelector("section.resultado");
 
 console.log('main.js ok')
 
 //fazer modularização
 
-//referência de site
-function de_site() {
-    console.log('SITE OK');
-    
+//formatar data: DD mes AAAA
+let access_in = access.value;
+
+function names () {
     let fname = "";
     let lname = "";
     let full_name = author.value;
@@ -26,9 +27,10 @@ function de_site() {
         fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
     }
     lname = names[names.length-1].toUpperCase();
-    
-    //formatar data: DD mes AAAA
-    let access_in = access.value;
+}
+//referência de site
+function de_site() {
+    names();
     
     if (subtitle.value.length === 0){
         resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. Disponível em: ${available.value}. Acesso em: ${acesso_em} </p>`;
@@ -37,36 +39,6 @@ function de_site() {
     }
 }
 send_site.addEventListener('click', de_site);
-
-//NÃO ESTÁ RODANDO
-//referência de vídeo
-function de_video() {
-    console.log('VÍDEO OK');
-    
-    //exclusivos de vídeo
-    let publication_date = document.querySelector('input#publication');
-    
-    //extrair valores dos elementos html
-    let publication_date_f = publication_date.value;
-    let fname = "";
-    let lname = "";
-    let full_name = author.value;
-    let names = full_name.split(" ");
-    for (let i = 0; i < names.length-1; i++) {
-        fname += names[i] + " ";    //eliminar espaço depois da penúltima substring
-    }
-    lname = names[names.length-1].toUpperCase();
-    
-    //formatar data: DD mes AAAA
-    let access_in = access.value;
-
-    if (author.value.length = 0) {
-        resultado.innerHTML = `<p>${channel_f}. <strong>${title.value}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available.value}. Acesso em: ${access_in} </p>`;
-    } else {
-        resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. YouTube, ${publication_date_f}. Disponível em: ${available.value}. Acesso em: ${access_in} </p>`;
-    }
-}
-send_video.addEventListener('click', de_video);
 
 /*
 function de_livro(){
