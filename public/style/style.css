@@ -115,19 +115,20 @@ label.das_informacoes {
     font: normal normal 1em Arial;
 }
 input {
-    height: 3vh;
+    padding: 7px;
+    height: 2vh;
     width: 21vw;
     border: none;
-    border-radius: 11px;
+    border-radius: 7px;
 }
-.enviar_informacoes {
+button[type=submit] {
     background-color: var(--cinco);
     color: var(--dois);
     margin: 5px 35px;
     border: none;
     border-radius: 7px;
     width: 70px;
-    height: 20px;
+    height: 30px;
     cursor: pointer;
 }
 section.resultado {
