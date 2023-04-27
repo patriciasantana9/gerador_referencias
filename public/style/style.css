@@ -39,6 +39,12 @@ h1 {
     color: var(--dois);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h3.subtitle_section {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+}
 main {
     grid-area: main;
     width: 70vw;
@@ -99,7 +105,7 @@ section.referencias {
 section.informacoes, section.resultado {
     background-color: var(--um);
     padding: 16px;
-    margin-top: 32px;
+    margin-top: 5px;
     width: 45vw;
     height: fit-content;
     border-radius: 17px;
