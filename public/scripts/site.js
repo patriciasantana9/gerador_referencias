@@ -12,14 +12,12 @@ let send_site = document.querySelector("button.send_site");
 //para impressão do resultado
 let resultado = document.querySelector("section.resultado");
 
-//inputs
+//dados para referência
 let author = document.querySelector("input#author");
 let title = document.querySelector("input#title");
 let subtitle = document.querySelector("input#subtitle");
 let available = document.querySelector("input#available");
 let access = document.querySelector("input#access");
-
-//fazer modularização
 
 //extrair nomes de author
 let fname = "";
