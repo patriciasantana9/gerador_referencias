@@ -60,7 +60,7 @@ aside.materiais {
     align-items: center;
     gap: 25px;
 }
-.site, .video, .livro, .artigo, .trabalhos {
+.site, .video, .ebook, .articles, .academics {
     background-color: var(--cinco);
     color: var(--letras);
     width: 113px;
@@ -157,7 +157,7 @@ footer {
         justify-self: center;
         width: 113px;
     }
-    .site, .video, .livro, .artigo, .trabalhos {
+    .site, .video, .ebook, .articles, .academics {
         width: 84px;
         height: 5vh;
         font-size: 9px;
