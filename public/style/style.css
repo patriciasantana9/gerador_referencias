@@ -66,17 +66,21 @@ aside.materiais {
     align-items: center;
     gap: 25px;
 }
-.site, .video, .ebook, .articles, .academics {
+/* estilo dos botões dos sites */
+button.site, button.video, button.ebook, button.articles, button.academics {
     background-color: var(--cinco);
-    color: var(--letras);
     width: 113px;
     height: 5vh;
     margin-left: 10px;
     border: none;
     border-radius: 15px;
+}
+/* estilo dos links nos botões */
+button > a {
     font-size: 10px;
-    cursor: pointer;
     text-decoration: none;
+    color: var(--letras);
+    cursor: pointer;
 }
 .site {
     margin-top: 24px;
