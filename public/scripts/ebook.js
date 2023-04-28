@@ -38,6 +38,7 @@ function names () {
 
 //referência de ebook
 function de_ebook() {
+    console.log('de_ebook ok')
     names();
     
     //checar se possui informações importantes
@@ -46,9 +47,9 @@ function de_ebook() {
     } else {
         //checar se tem subtítulo
         if (subtitle.value.length !== 0){
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. ${edition.value}.ed. ${place.value}: ${editor.value}, ${year}. <em>Ebook</em>.</p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. ${edition.value}.ed. ${place.value}: ${editor.value}, ${year.value}. <em>Ebook</em>.</p>`;
         } else {
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. ${edition.value}.ed. ${place.value}: ${editor.value}, ${year}. <em>Ebook</em>.</p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. ${edition.value}.ed. ${place.value}: ${editor.value}, ${year.value}. <em>Ebook</em>.</p>`;
         }
     }
 }
