@@ -67,7 +67,7 @@ aside.materiais {
     gap: 25px;
 }
 /* estilo dos botões dos sites */
-button.site, button.video, button.ebook, button.articles, button.academics {
+button.site, button.video, button.ebook, button.article, button.academics {
     background-color: var(--cinco);
     width: 113px;
     height: 5vh;
