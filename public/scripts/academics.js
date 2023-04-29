@@ -16,7 +16,6 @@ let resultado = document.querySelector("section.resultado");
 let author = document.querySelector("input#author");
 let title = document.querySelector("input#title");
 let subtitle = document.querySelector("input#subtitle");
-let publication_date = document.querySelector("input#publication_date");
 let pages = document.querySelector("input#pages");
 let degree = document.querySelector("input#degree");
 let program = document.querySelector("input#program");
@@ -51,9 +50,9 @@ function de_academics() {
     } else {
         //checar se tem subtítulo
         if (subtitle.value.length !== 0){
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. ${year.value}. ${degree.value} - ${program.value}, ${university.value}, ${year.value}. Disponível em: ${available.value}. Acesso em: ${access.value}.</p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. ${year.value}. ${degree.value} - ${program.value}, ${university.value}, ${place.value}, ${year.value}. Disponível em: ${available.value}. Acesso em: ${access.value}.</p>`;
         } else {
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. ${year.value}. ${degree.value} - ${program.value}, ${university.value}, ${year.value}. Disponível em: ${available.value}. Acesso em: ${access.value}.</p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>. ${year.value}. ${degree.value} - ${program.value}, ${university.value}, ${place.value}, ${year.value}. Disponível em: ${available.value}. Acesso em: ${access.value}.</p>`;
         }
     }
 }

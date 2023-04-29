@@ -21,24 +21,19 @@
                     <h3 class="subtitle_section">TRABALHOS ACADÊMICOS</h3> 
 
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="autor">AUTOR</label>
-                        <input type="text" name="lautor" id="autor" placeholder="Autor">
+                        <label class="das_informacoes" for="author">AUTOR</label>
+                        <input type="text" name="lauthor" id="author" placeholder="Ex.: Hermione Granger">
                     </form>
 
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="titulo">TÍTULO</label>
-                        <input type="text" name="ltitulo" id="titulo" placeholder="Título">
+                        <label class="das_informacoes" for="title">TÍTULO</label>
+                        <input type="text" name="ltitle" id="title" placeholder="Ex.: Uma tese">
                     </form>    
 
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="titulo">SUBTÍTULO</label>
-                        <input type="text" name="lsubtitulo" id="subtitulo" placeholder="Subtítulo">
+                        <label class="das_informacoes" for="subtitle">SUBTÍTULO</label>
+                        <input type="text" name="lsubtitle" id="subtitle" placeholder="Ex.: sobre algo">
                     </form>  
-                    
-                    <form action="" class="formulario">
-                        <label class="das_informacoes" for="publication_date">ANO DE PUBLICAÇÃO</label>
-                        <input type="year" name="lpublication_date" id="publication_date" placeholder="Ex.: 2016">
-                    </form>
 
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="pages">TOTAL DE PÁGINAS</label>
@@ -48,6 +43,11 @@
                     <form action="" class="fomulario">
                         <label class="das_informacoes" for="degree">GRAU E ÁREA DE CONCENTRAÇÃO</label>
                         <input type="text" name="ldegree" id="degree" placeholder="Ex.: Tese (Doutorado em Estudos Literários)">
+                    </form>
+                    
+                    <form action="" class="fomulario">
+                        <label class="das_informacoes" for="program">PROGRAMA</label>
+                        <input type="text" name="lprogram" id="program" placeholder="Ex.: Programa de Pós-Graduação em Estudos Literários">
                     </form>
                     
                     <form action="" class="fomulario">
@@ -62,21 +62,21 @@
                     
                     <form action="" class="formulario">
                         <label class="das_informacoes" for="year">ANO DE DEFESA </label>
-                        <input type="date" name="lyear" id="year" placeholder="Ex.: 2018">
+                        <input type="year" name="lyear" id="year" placeholder="Ex.: 2018">
                     </form>
 
                     <form action="" class="fomulario">
-                        <label class="das_informacoes" for="disponivel">DISPONÍVEL EM:</label>
-                        <input type="text" name="ldisponivel" id="disponivel" placeholder="Disponível">
+                        <label class="das_informacoes" for="available">DISPONÍVEL EM:</label>
+                        <input type="text" name="lavailable" id="available" placeholder="Ex.: http://www.algumartigo/um">
                     </form>
 
                     <form action="" class="formulario">
-                        <label class="das_informacoes" for="acesso">ACESSO EM: </label>
-                        <input type="date" name="lacesso" id="acesso" placeholder="Acesso">
+                        <label class="das_informacoes" for="access">ACESSO EM: </label>
+                        <input type="date" name="laccess" id="access" placeholder="Ex.: 23 jun. 2023">
                     </form>
                     
 
-                    <button type="submit" class="enviar_informacoes">ENVIAR</button>
+                    <button type="submit" class="send_academics">ENVIAR</button>
                 </section>        
                 <!-- acrescentar done.ejs -->
                 <%- include('../partials/done'); %>
@@ -84,5 +84,6 @@
         </main>
         <footer>CRIADO POR PATRÍCIA SANTANA</footer> 
     </article>
+    <script src="/scripts/academics.js"></script>
 </body>
 </html>
