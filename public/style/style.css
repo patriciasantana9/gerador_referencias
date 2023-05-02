@@ -64,7 +64,6 @@ aside.materiais {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-items: center; */
     gap: 25px;
 }
 /* estilo dos botões dos sites */
@@ -83,9 +82,6 @@ a.site, a.video, a.ebook, a.article, a.academics {
     border-radius: 15px;
     align-self: center;
 }
-/* estilo dos links nos botões */
-/*button > a {
-}*/
 a.site {
     margin-top: 24px;
 }
@@ -174,8 +170,12 @@ footer {
     }
     .site, .video, .ebook, .articles, .academics {
         width: 84px;
-        height: 5vh;
+        height: 20px;
         font-size: 9px;
+
+        padding-top: 15px;
+        margin-left: 10px;
+        border-radius: 15px;
     }
     main {
         width: 73vw;
