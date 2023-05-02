@@ -1,9 +1,7 @@
 console.log('article.js ok');
 
 //marcar botão do site no aside
-let button_article = document.querySelector('button.article');
 let a_article = document.querySelector('a.article');
-button_article.style.backgroundColor = "#a53d18";
 a_article.style.backgroundColor = "#a53d18";
 
 //para evento

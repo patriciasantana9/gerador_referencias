@@ -1,9 +1,7 @@
 console.log('site.js ok')
 
 //marcar botão do site no aside
-let button_site = document.querySelector('button.site');
 let a_site = document.querySelector('a.site');
-button_site.style.backgroundColor = "#a53d18";
 a_site.style.backgroundColor = "#a53d18";
 
 //para evento

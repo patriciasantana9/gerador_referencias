@@ -1,9 +1,7 @@
 console.log('academics.js ok');
 
 //marcar botão do site no aside
-let button_academics = document.querySelector('button.academics');
-let a_academics = document.querySelector('a.academics');
-button_academics.style.backgroundColor = "#a53d18";
+let button_academics = document.querySelector('a.academics');
 a_academics.style.backgroundColor = "#a53d18";
 
 //para evento
