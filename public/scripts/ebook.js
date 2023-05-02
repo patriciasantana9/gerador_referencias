@@ -30,7 +30,6 @@ function names () {
     let full_name = author.value;
     let names = full_name.split(" ");
     for (let i = 0; i < names.length-1; i++) {
-        //eliminar espaço depois da penúltima substring
         fname += names[i] + " ";    
     }
     fname = fname.trim();
