@@ -29,6 +29,7 @@ function names () {
             //eliminar espaço depois da penúltima substring
             fname += names[i] + " ";    
         }
+        fname = fname.trim();
         lname = names[names.length-1].toUpperCase();
     }
     return fname, lname;
