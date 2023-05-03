@@ -18,8 +18,32 @@ h1 {
 aside.materiais {
     justify-self: center;
     width: 113px;
+    grid-area: aside;
+    margin-top: 32px;
+    width: 95%;
+    box-shadow: 7px 4px 14px -14px var(--dois);
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+/* estilo dos botões dos sites */
+a.site, a.video, a.ebook, a.articles, a.academics {
+    width: 84px;
+    height: 20px;
+    font-size: 9px;
 
+    padding-top: 15px;
+    margin-left: 10px;
+    border-radius: 15px;
+    color: var(--letras);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--cinco);
+    border: none;
+    align-self: center;
 }
 article {
     height: 100vh;
@@ -30,24 +54,33 @@ article {
     grid-template-areas: 
         "header header header"
         "aside main main"
-        "footer footer footer"; 
+        "footer footer footer";     
 }
-.site, .video, .ebook, .articles, .academics {
-    width: 84px;
-    height: 20px;
-    font-size: 9px;
-
-    padding-top: 15px;
-    margin-left: 10px;
-    border-radius: 15px;
+header {
+    grid-area: header;
+    background-color: var(--tres);
+    box-shadow: 5px 8px 22px -12px var(--dois);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3.subtitle_section {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 19px;
+    font-weight: lighter;
+    text-align: center;
 }
 main {
     width: 73vw;
     justify-self: center;
     display: flex;
     flex-direction: column;
-
+    
     align-items: center; 
+    grid-area: main;
+    margin-top: 32px;
+    box-shadow: 4px 12px 17px -12px var(--dois);
+    justify-items: center;
 }
 section.referencias {
     width: 69vw;
@@ -58,9 +91,17 @@ section.referencias {
     flex-direction: column;
     gap: 25px;
 }
-h2 {
-    font: normal normal 1.4em serif;
+div.legenda_section {
+    width: 64vw;
+    border-bottom: solid 1px var(--tres);
 }
+h2.titulo_section {
+    color: var(--dois);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* h2 {
+    font: normal normal 1.4em serif;
+} */
 section.informacoes, section.resultado {
     background-color: var(--um);
     padding: 16px;

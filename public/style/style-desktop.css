@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* definir tudo para celular */
-
+/*
 article {
     height: 100vh;
     width: 98vw;
@@ -12,21 +12,14 @@ article {
         "header header header"
         "aside main main"
         "footer footer footer"; 
-}
-header {
-    grid-area: header;
-    background-color: var(--tres);
-    box-shadow: 5px 8px 22px -12px var(--dois);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+}*/
+
 h1 {
     font: normal normal 2.4em serif;
     color: var(--letras);
     text-align: center;
 }
-.titulo_section {
+h2.titulo_section {
     color: var(--dois);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
