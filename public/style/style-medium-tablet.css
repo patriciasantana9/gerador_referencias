@@ -22,6 +22,10 @@ a.site, a.video, a.ebook, a.article, a.academics {
 a.site {
     margin-top: 16px;
 }
+h2.titulo_section {
+    margin: 16px 0px;
+    font-size: 1.8em;
+}
 section.referencias {
     gap: 16px;
 }
@@ -30,8 +34,7 @@ section.informacoes, section.resultado {
 }
 h3.subtitle_section {
     font-size: 1.3em;
-    padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 section.resultado {
     padding: 24px;

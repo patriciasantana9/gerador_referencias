@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* small - portrait tablets and large phones - (min-width: 600px) and (max-width: 768px */
+/* small - portrait tablets and large phones - 600px - 768px */
 
 article {
     display: grid;
@@ -28,6 +28,10 @@ a.site, a.video, a.ebook, a.article, a.academics {
 a.site {
     margin-top: 16px;
 }
+h2.titulo_section {
+    margin: 16px 0px;
+    font-size: 1.4em;
+}
 section.referencias {
     gap: 16px;
 }
@@ -35,13 +39,13 @@ section.informacoes, section.resultado {
     padding: 16px;
 }
 h3.subtitle_section {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 section.resultado {
     padding: 16px;
 }
 label.das_informacoes {
-    font: normal normal 1em Arial;
+    font: normal normal 0.8em Arial;
     margin-bottom: 8px;
 }
 button[type=submit] {
