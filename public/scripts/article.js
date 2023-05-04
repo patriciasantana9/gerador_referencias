@@ -3,6 +3,7 @@ console.log('article.js ok');
 //marcar botão do site no aside
 let a_article = document.querySelector('a.article');
 a_article.style.backgroundColor = "#a53d18";
+a_article.style.color = "#ffffff";
 
 //para evento
 let send_article = document.querySelector("button.send_article");

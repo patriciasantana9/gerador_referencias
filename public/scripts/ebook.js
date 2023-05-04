@@ -3,6 +3,7 @@ console.log('ebook.js ok');
 //marcar botão do site no aside
 let a_ebook = document.querySelector('a.ebook');
 a_ebook.style.backgroundColor = "#a53d18";
+a_ebook.style.color = "#ffffff";
 
 //para evento
 let send_ebook = document.querySelector("button.send_ebook");

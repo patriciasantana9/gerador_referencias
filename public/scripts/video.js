@@ -1,6 +1,7 @@
 //marcar botão do site no aside
 let a_video = document.querySelector('a.video');
 a_video.style.backgroundColor = "#a53d18";
+a_video.style.color = "#ffffff";
 
 //pegar inputs
 let author = document.querySelector("input#author");
