@@ -25,6 +25,9 @@ a.site, a.video, a.ebook, a.article, a.academics {
     height: 40px;
     margin-left: -8px;
 }
+a.site {
+    margin-top: 16px;
+}
 section.referencias {
     gap: 16px;
 }
