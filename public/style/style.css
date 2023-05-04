@@ -12,6 +12,26 @@
 * {
     margin: 0px;
 }
+article {
+    height: 100vh;
+    width: 98vw;
+    display: grid;
+    grid-template-columns: 20vw 60vw;
+    grid-template-rows: 88px 40px auto 48px;
+    grid-template-areas: 
+        "header  header"
+        "aside aside" 
+        "main main"
+        "footer  footer";     
+}
+header {
+    grid-area: header;
+    background-color: var(--tres);
+    box-shadow: 5px 8px 22px -12px var(--dois);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 h1 {
     font: normal normal 1.7em serif;
     color: var(--letras);
@@ -25,7 +45,7 @@ aside.materiais {
     justify-self: center;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 25px;
 }
@@ -42,29 +62,9 @@ a.site, a.video, a.ebook, a.article, a.academics {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    /* align-self: center; */
 }
 a.site {
     margin-top: 24px;
-}
-article {
-    height: 100vh;
-    width: 98vw;
-    display: grid;
-    grid-template-columns: 20vw 40vw 40vw;
-    grid-template-rows: 88px auto 48px;
-    grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "footer footer footer";     
-}
-header {
-    grid-area: header;
-    background-color: var(--tres);
-    box-shadow: 5px 8px 22px -12px var(--dois);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 main {
     width: 73vw;
