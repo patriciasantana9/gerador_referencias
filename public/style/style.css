@@ -130,9 +130,9 @@ label.das_informacoes {
     font: normal normal 0.8em Arial;
 }
 input {
-    padding: 7px;
+    padding: 8px;
     height: 2vh;
-    width: 57vw;
+    width: 56vw;
     border: none;
     border-radius: 7px;
 }

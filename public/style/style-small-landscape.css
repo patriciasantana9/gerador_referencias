@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* small - portrait tablets and large phones - (min-width: 600px) and (max-width: 768px */
+
+article {
+    display: grid;
+    grid-template-columns: 21vw 41vw 43vw;
+    grid-template-rows: 88px auto 48px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";     
+}
+h1 {
+    font: normal normal 1.9em serif;
+}
+aside.materiais {
+    margin-top: 48px;
+    gap: 40px;
+}
+/* estilo dos botões dos sites */
+a.site, a.video, a.ebook, a.article, a.academics {
+    font-size: 0.8em;
+    width: 80%;
+    height: 40px;
+    margin-left: -8px;
+}
+section.referencias {
+    gap: 16px;
+}
+section.informacoes, section.resultado {
+    padding: 16px;
+}
+h3.subtitle_section {
+    font-size: 1.3em;
+}
+section.resultado {
+    padding: 16px;
+}
+label.das_informacoes {
+    font: normal normal 1em Arial;
+    margin-bottom: 8px;
+}
+button[type=submit] {
+    width: 80px;
+}
