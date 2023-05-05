@@ -2,17 +2,19 @@
 
 /* medium - landscape tablets - 768px - 992px */
 
-article {
-    grid-template-columns: 17vw 43vw 40vw;
+article {       
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: 88px auto 48px;
     grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "footer footer footer";   
+        "header header"
+        "aside main"
+        "footer footer";
 }
-h1 {
-    font: normal normal 1.9em serif;
-}
+
+header {width: 107vw;}
+
+h1 {font: normal normal 1.9em serif;}
+
 aside.materiais {
     margin-top: 48px;
     gap: 36px;
@@ -21,34 +23,33 @@ aside.materiais {
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
     font-size: 0.8em;
-    width: 80%;
     height: 36px;
-    margin-left: -8px;
+    margin-left: 2px;
 }
-a.site {
-    margin-top: 16px;
-}
+a.site { margin-top: 16px; }
+
+main { width: 80vw; box-shadow: 4px 12px 17px -12px var(--dois); }
+
 h2.titulo_section {
     margin: 16px 0px;
     font-size: 1.8em;
 }
-section.referencias {
-    gap: 16px;
-}
-section.informacoes, section.resultado {
-    padding: 24px;
-}
-h3.subtitle_section {
-    font-size: 1.3em;
-    margin-bottom: 8px;
-}
-section.resultado {
-    padding: 24px;
-}
+
+section.referencias { width: 72vw; gap: 16px; justify-content: center; }
+
+div.legenda_section { width: 64vw; }
+
+section.informacoes, section.resultado { width: 64vw; padding: 24px; }
+
+h3.subtitle_section { font-size: 1.3em; margin-bottom: 8px; }
+
+section.resultado { padding: 24px; }
+
 label.das_informacoes {
+    width: 56vw;
     font: normal normal 1em Arial;
     margin-bottom: 8px;
 }
-button[type=submit] {
-    width: 88px;
-}
+input {width: 56vw;}
+
+button[type=submit] { width: 88px; }
