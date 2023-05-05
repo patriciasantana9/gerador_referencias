@@ -3,16 +3,18 @@
 /* small - portrait tablets and large phones - 600px - 768px */
 
 article {
-    grid-template-columns: 21vw 41vw 43vw;
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: 88px auto 48px;
     grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "footer footer footer";     
+    "header header"
+    "aside main"
+    "footer footer";     
 }
-h1 {
-    font: normal normal 1.9em serif;
-}
+
+header {width: 107vw;}
+
+h1 {font: normal normal 1.9em serif;}
+
 aside.materiais {
     margin-top: 48px;
     gap: 40px;
@@ -21,33 +23,37 @@ aside.materiais {
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
     font-size: 0.8em;
-    width: 80%;
+    /* width: 80%; */
     height: 40px;
-    margin-left: -8px;
+    margin-left: 2px;
 }
-a.site {
-    margin-top: 16px;
-}
+
+a.site {margin-top: 16px;}
+
 h2.titulo_section {
     margin: 16px 0px;
     font-size: 1.4em;
 }
 section.referencias {
+    width: 72vw;
     gap: 16px;
 }
+
+div.legenda_section {width: 72vw;}
+
 section.informacoes, section.resultado {
+    width: 72vw;
     padding: 16px;
 }
-h3.subtitle_section {
-    font-size: 1em;
-}
-section.resultado {
-    padding: 16px;
-}
+h3.subtitle_section {font-size: 1em;}
+
+section.resultado {padding: 16px;}
+
 label.das_informacoes {
     font: normal normal 0.8em Arial;
     margin-bottom: 8px;
 }
-button[type=submit] {
-    width: 80px;
-}
+
+input {width: 64vw;}
+
+button[type=submit] {width: 80px;}
