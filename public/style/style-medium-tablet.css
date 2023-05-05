@@ -3,7 +3,12 @@
 /* medium - landscape tablets - 768px - 992px */
 
 article {
-    grid-template-columns: 17vw 43vw 40vw;    
+    grid-template-columns: 17vw 43vw 40vw;
+    grid-template-rows: 88px auto 48px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";   
 }
 h1 {
     font: normal normal 1.9em serif;
@@ -11,6 +16,7 @@ h1 {
 aside.materiais {
     margin-top: 48px;
     gap: 36px;
+    flex-direction: column;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {

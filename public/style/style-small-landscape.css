@@ -3,7 +3,6 @@
 /* small - portrait tablets and large phones - 600px - 768px */
 
 article {
-    display: grid;
     grid-template-columns: 21vw 41vw 43vw;
     grid-template-rows: 88px auto 48px;
     grid-template-areas: 
@@ -17,6 +16,7 @@ h1 {
 aside.materiais {
     margin-top: 48px;
     gap: 40px;
+    flex-direction: column;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {

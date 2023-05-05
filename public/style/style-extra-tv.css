@@ -6,7 +6,11 @@ article {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 16vw 42vw 42vw;
-    grid-template-rows: 96px auto 48px;   
+    grid-template-rows: 96px auto 48px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";    
 }
 h1 {
     font: normal normal 2em serif;
@@ -16,6 +20,7 @@ aside.materiais {
     margin-left: 80px;
     width: 60%;
     gap: 36px;
+    flex-direction: column;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
