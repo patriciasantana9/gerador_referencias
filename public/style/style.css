@@ -14,17 +14,18 @@
 }
 article {
     height: 100vh;
-    width: 98vw;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 20vw 60vw;
+    grid-template-columns: 100vw;
     grid-template-rows: 88px 40px auto 48px;
     grid-template-areas: 
-        "header  header"
-        "aside aside" 
-        "main main"
-        "footer  footer";     
+        "header"
+        "aside" 
+        "main"
+        "footer";     
 }
 header {
+    width: 100vw;
     grid-area: header;
     background-color: var(--tres);
     box-shadow: 5px 8px 22px -12px var(--dois);
@@ -46,49 +47,50 @@ aside.materiais {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 25px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 15px;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: var(--dois);
     width: 90%;
     height: 26px;
     padding-top: 6px;
-    margin-left: -2px;
+    margin-left: -8px;
     text-align: center;
     text-decoration: none;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
-a.site {
-    margin-top: 24px;
+a:hover {
+    background-color: var(--cinco);
 }
 main {
-    width: 73vw;
+    grid-area: main;
+    width: 88vw;
     justify-self: center;
     display: flex;
     flex-direction: column;
     
     align-items: center; 
-    grid-area: main;
     margin-top: 32px;
-    box-shadow: 4px 12px 17px -12px var(--dois);
+    /* box-shadow: 4px 12px 17px -12px var(--dois); */
     justify-items: center;
 }
 section.referencias {
-    width: 73vw;
-    height: fit-content;
-    /* justify-self: center; */
-    
+    width: 88vw;
+    height: fit-content; 
     display: flex;
     flex-direction: column;
+    justify-self: center;
     gap: 8px;
 }
 div.legenda_section {
-    width: 64vw;
+    width: 88vw;
     border-bottom: solid 1px var(--tres);
 }
 h2.titulo_section {
@@ -103,7 +105,7 @@ section.informacoes, section.resultado {
     background-color: var(--um);
     padding: 12px;
     margin-top: 16px;
-    width: 64vw;
+    width: 80vw;
     height: fit-content;
     border-radius: 12px;
     box-shadow: 3px 6px 17px -12px var(--dois);
@@ -119,7 +121,6 @@ section.resultado {
     background-color: var(--um);
     padding: 12px;
     margin-bottom: 20px;
-    width: 64vw;
     height: 128px;
     border-radius: 17px;
     box-shadow: 3px 6px 17px -12px var(--dois);
@@ -131,13 +132,13 @@ form.formulario {
     gap: 3px;
 }
 label.das_informacoes {
-    font: normal normal 0.7em Arial;
+    font: normal normal 0.5em Arial;
     margin-bottom: 8px;
 }
 input {
     padding: 8px;
     height: 2vh;
-    width: 56vw;
+    width: 72vw;
     border: none;
     border-radius: 7px;
 }
