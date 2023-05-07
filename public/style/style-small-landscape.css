@@ -11,49 +11,44 @@ article {
     "footer footer";     
 }
 
-header {width: 107vw;}
+header {width: 100vw;}
 
 h1 {font: normal normal 1.9em serif;}
 
 aside.materiais {
+    width: 80%;
     margin-top: 48px;
-    gap: 40px;
+    gap: 20px;
     flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
-    font-size: 0.8em;
-    /* width: 80%; */
-    height: 40px;
+    font-size: 0.6em;
+    height: 36px;
+    width: 72%;
     margin-left: 2px;
 }
 
-a.site {margin-top: 16px;}
+a.site { margin-top: 16px; }
 
-h2.titulo_section {
-    margin: 16px 0px;
-    font-size: 1.4em;
-}
-section.referencias {
-    width: 72vw;
-    gap: 16px;
-}
+main { width: 72vw;}
 
-div.legenda_section {width: 72vw;}
+h2.titulo_section { margin: 16px 0px; font-size: 1.4em; }
 
-section.informacoes, section.resultado {
-    width: 64vw;
-    padding: 16px;
-}
-h3.subtitle_section {font-size: 1em;}
+section.referencias { width: 72vw; gap: 16px; }
 
-section.resultado {padding: 16px;}
+div.legenda_section { width: 64vw; }
 
-label.das_informacoes {
-    font: normal normal 0.8em Arial;
-    margin-bottom: 8px;
-}
+section.informacoes, section.resultado { width: 64vw; padding: 16px; }
 
-input {width: 56vw;}
+h3.subtitle_section { font-size: 1em; }
 
-button[type=submit] {width: 80px;}
+section.resultado { padding: 16px; }
+
+label.das_informacoes { font: normal normal 0.8em Arial; margin-bottom: 8px; }
+
+input { width: 56vw; }
+
+button[type=submit] { width: 80px; }
