@@ -11,29 +11,27 @@ article {
         "footer footer";
 }
 
-header {width: 107vw;}
-
 h1 {font: normal normal 1.9em serif;}
 
 aside.materiais {
     margin-top: 48px;
     gap: 36px;
     flex-direction: column;
+    width: 72%;
+    align-items: center;
+    justify-self: flex-end;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
-    font-size: 0.8em;
+    font-size: 0.6em;
     height: 36px;
-    margin-left: 2px;
+    width: 72%;
 }
 a.site { margin-top: 16px; }
 
-main { width: 80vw; box-shadow: 4px 12px 17px -12px var(--dois); }
+main { width: 72vw; box-shadow: 4px 12px 17px -12px var(--dois); }
 
-h2.titulo_section {
-    margin: 16px 0px;
-    font-size: 1.8em;
-}
+h2.titulo_section { margin: 16px 0px; font-size: 1.8em; }
 
 section.referencias { width: 72vw; gap: 16px; justify-content: center; }
 
@@ -45,11 +43,8 @@ h3.subtitle_section { font-size: 1.3em; margin-bottom: 8px; }
 
 section.resultado { padding: 24px; }
 
-label.das_informacoes {
-    width: 56vw;
-    font: normal normal 1em Arial;
-    margin-bottom: 8px;
-}
+label.das_informacoes { width: 56vw; font: normal normal 1em Arial; margin-bottom: 8px; }
+
 input {width: 56vw;}
 
 button[type=submit] { width: 88px; }
