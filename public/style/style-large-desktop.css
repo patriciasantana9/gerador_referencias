@@ -3,74 +3,60 @@
 /* large - 992px - 1200px */
 
 article {
-    grid-template-columns: 16vw 48vw 40vw;
+    grid-template-columns: 20vw 80vw;
     grid-template-rows: 104px auto 56px;
     grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "footer footer footer"; 
+        "header header"
+        "aside main"
+        "footer footer"; 
 }
-h1 {
-    font: normal normal 2.4em serif;
-}
+
+h1 { font: normal normal 2.4em serif; }
+
 aside.materiais {
     margin-top: 40px;
-    width: 95%;
     gap: 36px;
     flex-direction: column;
+    width: 72%;
+    align-items: center;
+    justify-self: flex-end;
 }
 /* estilo dos botões dos sites */
 a.site, a.video, a.ebook, a.article, a.academics {
     font-size: 0.8em;
-    width: 12vw;
-    height: 6vh;
+    width: 72%;
+    height: 36px;
     padding-top: 15px;
-    margin-left: 10px;
     border-radius: 16px;
 }
-a.site {
-    margin-top: 24px;
-}
-a:hover {
-    background-color: var(--cinco); 
-}
-main {
-    width: 70vw;
-    margin-top: 32px;
-}
-section.referencias {
-    width: 72vw;
-    gap: 25px;
-}
-h2.titulo_section {
-    margin: 16px 0px;
-    font-size: 1.8em;
-}
+
+a.site { margin-top: 24px; }
+
+a:hover { background-color: var(--cinco); }
+
+main { width: 72vw; margin-top: 32px; box-shadow: 4px 12px 17px -12px var(--dois); }
+
+section.referencias { width: 72vw; gap: 25px; }
+
+div.legenda_section { width: 64vw; }
+
+h2.titulo_section { margin: 16px 0px; font-size: 1.8em; }
+
 section.informacoes, section.resultado {
     padding: 16px;
     margin-top: 8px;
     width: 64vw;
 }
-h3.subtitle_section {
-    font-size: 1.5em;
-}
-form.formulario {
-    margin: 32px 0px 0px 32px;
-    gap: 8px;
-}
-label.das_informacoes {
-    font: normal normal 1.1em Arial;
-}
-input {
-    padding: 7px;
-    height: 3vh;
-    width: 56vw;
-}
-button[type=submit] {
-    margin: 16px 0px 16px 32px;
-    width: 8vw;
-    height: 6vh;
-}
+h3.subtitle_section { font-size: 1.5em; }
+
+form.formulario { margin: 32px 0px 0px 32px; gap: 8px; }
+
+label.das_informacoes { font: normal normal 1.1em Arial; }
+
+input { padding: 7px; height: 3vh; width: 56vw; }
+
+button[type=submit] { margin: 16px 0px 16px 32px; width: 8vw; height: 6vh; }
+
 section.resultado {
     width: 64vw;
     height: 128px;
