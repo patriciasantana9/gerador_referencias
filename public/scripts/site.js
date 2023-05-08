@@ -33,17 +33,23 @@ function names () {
     lname = names[names.length-1].toUpperCase();
 }
 
-/*
-const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"];
-let data = new Date("12/31/2019");
-let dataFormatada = ((data.getDate() + " " + meses[(data.getMonth())] + " " + data.getFullYear()));
-console.log(dataFormatada);
-//saída: 31 Dez 2019
-*/
+function accessDate() {
+    const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"];
+    let date = access.value;
+    let formatedDate = ;
+    /*
+    const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"];
+    let data = new Date("12/31/2019");
+    let dataFormatada = ((data.getDate() + " " + meses[(data.getMonth())] + " " + data.getFullYear()));
+    console.log(dataFormatada);
+    //saída: 31 Dez 2019
+    */
+}
 
 //referência de site
 function de_site() {
     names();
+    date();
     
     //checar se possui informações importantes
     if (author.value.length === 0) {
