@@ -8,7 +8,6 @@ let author = document.querySelector("input#author");
 let title = document.querySelector("input#title");
 let subtitle = document.querySelector("input#subtitle");
 let available = document.querySelector("input#available");
-let publication_date = document.querySelector('input#publication');
 let channel_f = document.querySelector('input#channel');
 
 //button para função principal
@@ -32,7 +31,7 @@ function names () {
     return fname, lname;
 }
 
-//função para formatar data
+//funções para formatar data
 let formatedDate;
 function accessDate() {
     //valor do input data
@@ -45,26 +44,39 @@ function accessDate() {
     return formatedDate = ((date.getDate() + " " + months[(date.getMonth())] + " " + date.getFullYear()));
 }
 
+let formatedPublicationDate;
+function publicationDate() {
+    //valor do input data
+    let publication_date = document.querySelector('input#publication').value;
+    //valores para substituir mês
+    const months = ["jan", "fev", "mar", "abr", "mai", "jun", "jul","ago","set","out","nov","dez"];
+    //trasnformar data capturada em string para que fique correta
+    let date = new Date(JSON.stringify(publication_date));
+    
+    return formatedPublicationDate = ((date.getDate() + " " + months[(date.getMonth())] + " " + date.getFullYear()));
+}
+
 //gerar referência de vídeo
 function de_video() {
     //resultado dos nomes
     names();
     accessDate();
+    publicationDate();
 
     //onde será impresso
     let resultado = document.querySelector("section.resultado");
 
     //checar se tem todos os dados necessários
-    if (title.value.length == 0 || available.value.length == 0) {
+    if (author.value.length === 0 && channel_f.value.length === 0) {
         alert('Por favor, digite as informações pedidas.');
     } else {
         //checar se tem autor
         if (author.value.length !== 0) {
             //com autor
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${formatedPublicationDate}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
         } else {
             //sem autor
-            resultado.innerHTML = `<p>${channel_f.value}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
+            resultado.innerHTML = `<p>${channel_f.value}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${formatedPublicationDate}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
         }
     }
 }
