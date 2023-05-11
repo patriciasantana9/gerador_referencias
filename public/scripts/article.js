@@ -54,7 +54,7 @@ function accessDate() {
 //referência de site
 function de_article() {
     names();
-    formatedDate();
+    accessDate();
     
     //checar se possui informações importantes
     if (author.value.length === 0) {
