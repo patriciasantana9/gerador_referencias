@@ -8,7 +8,6 @@ let author = document.querySelector("input#author");
 let title = document.querySelector("input#title");
 let subtitle = document.querySelector("input#subtitle");
 let available = document.querySelector("input#available");
-let access = document.querySelector("input#access");
 let publication_date = document.querySelector('input#publication');
 let channel_f = document.querySelector('input#channel');
 
@@ -33,13 +32,24 @@ function names () {
     return fname, lname;
 }
 
-//formatar data: DD mes AAAA; outra função?
-let access_in = access.value;
+//função para formatar data
+let formatedDate;
+function accessDate() {
+    //valor do input data
+    let access = document.querySelector("input#access").value;
+    //valores para substituir mês
+    const months = ["jan", "fev", "mar", "abr", "mai", "jun", "jul","ago","set","out","nov","dez"];
+    //trasnformar data capturada em string para que fique correta
+    let date = new Date(JSON.stringify(access));
+    
+    return formatedDate = ((date.getDate() + " " + months[(date.getMonth())] + " " + date.getFullYear()));
+}
 
 //gerar referência de vídeo
 function de_video() {
     //resultado dos nomes
     names();
+    accessDate();
 
     //onde será impresso
     let resultado = document.querySelector("section.resultado");
@@ -51,10 +61,10 @@ function de_video() {
         //checar se tem autor
         if (author.value.length !== 0) {
             //com autor
-            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${access_in} </p>`;
+            resultado.innerHTML = `<p>${lname}, ${fname}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
         } else {
             //sem autor
-            resultado.innerHTML = `<p>${channel_f.value}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${access_in} </p>`;
+            resultado.innerHTML = `<p>${channel_f.value}. <strong>${title.value}</strong>: ${subtitle.value}. YouTube, ${publication_date.value}. Disponível em: ${available.value}. Acesso em: ${formatedDate}.</p>`;
         }
     }
 }
